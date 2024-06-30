@@ -1,4 +1,5 @@
 import 'package:baghdad_prayers/util/my_constants.dart';
+import 'package:jhijri/jHijri.dart';
 
 class PrayersController {
   // List<String> times = ["08:00", "12:00", "14:00", "15:00", "22:00"];
@@ -44,5 +45,11 @@ class PrayersController {
     } else {
       return "${hour.padLeft(2, "0")}:${minute.padLeft(2, "0")}";
     }
+  }
+
+  String getHijriDate() {
+    var hijriDate = HijriDate.now();
+
+    return hijriDate.toString();
   }
 }

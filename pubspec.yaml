@@ -12,7 +12,9 @@ dependencies:
   flutter_localizations:
     sdk: flutter
   intl: ^0.18.1
+  jhijri: ^1.0.0
   riverpod: ^2.5.1
+  
 
 dev_dependencies:
   flutter_test:

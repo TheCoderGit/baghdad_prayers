@@ -25,6 +25,7 @@ class MainPage extends StatelessWidget {
               currentPrayerName: prayerNames[nextPrayer],
               currentPrayerTime: prayersController
                   .time24To12Converter(todayPrayers![nextPrayer]),
+              currentHijriDate: prayersController.getHijriDate(),
             ),
             const RemainingTimeSection(),
             ListView.builder(
