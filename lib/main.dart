@@ -1,4 +1,4 @@
-import 'package:baghdad_prayers/pages/main_page.dart';
+import 'package:baghdad_prayers/pages/main_page/main_page.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 
