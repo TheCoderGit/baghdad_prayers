@@ -11,19 +11,7 @@ class RemainingTimeSection extends StatefulWidget {
 }
 
 class _RemainingTimeState extends State<RemainingTimeSection> {
-  //late DateTime currentTime;
-  //late Timer timer;
 
-  // @override
-  // void initState() {
-  //   currentTime = DateTime.now();
-  //   timer = Timer.periodic(const Duration(seconds: 1), (time) {
-  //     setState(() {
-  //       currentTime = DateTime.now();
-  //     });
-  //   });
-  //   super.initState();
-  // }
 
   @override
   Widget build(BuildContext context) {

@@ -52,4 +52,22 @@ class PrayersController {
 
     return hijriDate.toString();
   }
+
+  String getHijriDate2() {
+    var today = DateTime.now();
+
+    var hijriDate = JHijri(
+        fDate: DateTime.parse(
+            "${today.year.toString()}-${today.month.toString()}-${today.day.toString()}"));
+
+    return hijriDate.toString();
+  }
+
+  getDate() {
+    final jh1 = JHijri.now();
+    final jh2 = JHijri(fMonth: 2, fYear: 1444, fDay: 11);
+    final jh3 = JHijri(fDate: DateTime.parse("1984-12-24"));
+
+    print(jh3.hijri.toMap().toString());
+  }
 }

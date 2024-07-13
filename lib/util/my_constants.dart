@@ -36,7 +36,6 @@ const monthsName = {
   },
 };
 
-
 const prayerNames = [
   "الفجر اول",
   "الفجر ثان",
@@ -47,6 +46,19 @@ const prayerNames = [
   "العشاء",
 ];
 
+const prayersImages = [
+  fagr1Image,
+  fagr2Image,
+  shorookImage,
+  zohrImage,
+  asrImage,
+  maghrebImage,
+  eshaaImage
+];
+
+const hadith = [
+  "عن أبي هريرة - رضي الله عنه - أن رسول الله - صلى الله عليه وسلم - قال: ((أرأيتم لو أن نهرًا بباب أحدكم يغتسل منه كل يوم خمس مرات، هل يبقى من درنه شيء؟))، قالوا: لا يبقى من درنه شيء، قال: ((فذلك مثل الصلوات الخمس؛ يمحو الله بهن الخطايا)) متفق عليه",
+];
 
 const fagr1Image = "images/praying.png";
 const fagr2Image = "images/praying.png";
