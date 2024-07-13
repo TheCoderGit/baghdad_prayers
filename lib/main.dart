@@ -1,4 +1,4 @@
-import 'package:baghdad_prayers/pages/main_page/main_page.dart';
+import 'package:baghdad_prayers/pages/new_design.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 
@@ -24,7 +24,7 @@ class MainApp extends StatelessWidget {
         GlobalCupertinoLocalizations.delegate,
         GlobalWidgetsLocalizations.delegate,
       ],
-      home: MainPage(),
+      home: Landing(),
     );
   }
 }

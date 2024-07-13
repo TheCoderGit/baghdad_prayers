@@ -1,36 +1,58 @@
 import 'package:baghdad_prayers/util/my_constants.dart';
 import 'package:flutter/material.dart';
 
-class MainPage extends StatelessWidget {
-  const MainPage({super.key});
+class Landing extends StatelessWidget {
+  const Landing({super.key});
 
   @override
   Widget build(BuildContext context) {
     return const Scaffold(
-      body: SafeArea(
-          child: SingleChildScrollView(
-        child: Stack(
-          alignment: Alignment.center,
-          clipBehavior: Clip.none,
+      body: Stack(
+        children: [
+          TopSection(),
+          LowerSection(),
+        ],
+      ),
+    );
+  }
+}
+
+class LowerSection extends StatelessWidget {
+  const LowerSection({
+    super.key,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    return const Center(
+      child: SingleChildScrollView(
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.center,
           children: [
-            TopSection(),
-            Positioned(
-              top: 140,
-              child: SingleChildScrollView(
-                child: Column(
-                  children: [
-                    PrayersCard(),
-                    SizedBox(
-                      height: 20,
-                    ),
-                    HadithCard(),
-                  ],
+            HijriDate(),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceAround,
+              children: [
+                HeaderButton(),
+                HeaderButton(),
+                HeaderButton(),
+              ],
+            ),
+            SizedBox(
+              height: 15,
+            ),
+            Column(
+              children: [
+                PrayersCard(),
+                SizedBox(
+                  height: 15,
                 ),
-              ),
-            )
+                HadithCard(),
+              ],
+            ),
           ],
         ),
-      )),
+      ),
     );
   }
 }

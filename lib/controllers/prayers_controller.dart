@@ -64,10 +64,10 @@ class PrayersController {
   }
 
   getDate() {
-    final jh1 = JHijri.now();
-    final jh2 = JHijri(fMonth: 2, fYear: 1444, fDay: 11);
-    final jh3 = JHijri(fDate: DateTime.parse("1984-12-24"));
+    //final jh1 = JHijri.now();
+    //final jh2 = JHijri(fMonth: 2, fYear: 1444, fDay: 11);
+    //final jh3 = JHijri(fDate: DateTime.parse("1984-12-24"));
 
-    print(jh3.hijri.toMap().toString());
+    //print(jh3.hijri.toMap().toString());
   }
 }
